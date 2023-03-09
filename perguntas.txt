@@ -1,0 +1,117 @@
+1) Observe o trecho de código abaixo:
+
+int INDICE = 13, SOMA = 0, K = 0;
+
+enquanto K < INDICE faça
+
+{
+
+K = K + 1;
+
+SOMA = SOMA + K;
+
+}
+
+imprimir(SOMA);
+
+
+
+Ao final do processamento, qual será o valor da variável SOMA?
+
+RESPOSTA: O valor da variável SOMA srá igual a 91
+
+-----------------------------------------------------------------------------------------------------
+
+2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+
+
+
+IMPORTANTE:
+
+Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
+
+RESPOSTA: o código está no arquivo "pergunta2.cpp"
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+3) Descubra a lógica e complete o próximo elemento:
+
+
+
+a) 1, 3, 5, 7, ___
+R: 9
+
+b) 2, 4, 8, 16, 32, 64, ____
+R: 128
+
+c) 0, 1, 4, 9, 16, 25, 36, ____
+R: 49
+
+d) 4, 16, 36, 64, ____
+R: 100
+
+e) 1, 1, 2, 3, 5, 8, ____
+R: 13
+
+f) 2,10, 12, 16, 17, 18, 19, ____
+R: 20
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+4 - Dois veículos (um carro e um caminhão) saem respectivamente de cidades opostas pela mesma rodovia. O carro de Ribeirão Preto em direção a Franca, a uma velocidade constante de 110 km/h e o caminhão de Franca em direção a Ribeirão Preto a uma velocidade constante de 80 km/h. Quando eles se cruzarem na rodovia, qual estará mais próximo a cidade de Ribeirão Preto?
+
+
+
+IMPORTANTE:
+
+a) Considerar a distância de 100km entre a cidade de Ribeirão Preto <-> Franca.
+
+b) Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mais para passar em cada um deles e o carro possui tag de pedágio (Sem Parar)
+
+c) Explique como chegou no resultado.
+
+
+R: Quando os dois veículos se cruzarem na rodovia, os dois estarão a mesma distancia da cidade de Ribeirão Preto. Pois, quando eles se cruzarem ambos estarão no mesmo ponto. Eles se cruzarão aproximadamente na distancia 60,97.
+
+Para calcular a distancia primeiro escreve-se a função horária da posição de cada corpo:
+
+S = So + v.t
+
+onde o So é a distancia inicial de cada veículos,
+o v é a velocidade,
+e o t é o tempo
+
+S(carro) = 0 + 110.
+
+a velocidade média do cominhão é 80km/h, o que leve cerca de 1,25h para percorrer a rodovia, entretanto, leva mais 10 minutos para passar no pedágio, então ao todo leva em média 1,42h para percorrer a rodovia, então sua velocidade média será de 70,4km/h
+
+S(caminhão) = 100 - 70,4.t
+
+Agora se igualam as funções:
+
+S(carro) = S(caminhão)
+110.t = 100 - 70,4.t
+180,4.t = 100
+t = 0,5543...h
+
+Para determinar a posição do encontro, deve-se substituir o valor do instante de encontro em uma das funções horárias.
+S(carro) = 110.t = 110 . 0.5543... = 60,97 km
+
+-----------------------------------------------------------------------------------------------------
+
+
+5) Escreva um programa que inverta os caracteres de um string.
+
+
+
+IMPORTANTE:
+
+a) Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
+
+b) Evite usar funções prontas, como, por exemplo, reverse;
+
+RESPOSTA: o código está no arquivo "pergunta5.cpp"
